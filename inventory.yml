@@ -14,7 +14,7 @@ ubuntu-servers:
       ansible_user: ubuntu
       ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
 
-    n2:
+    n3:
       ansible_host: 172.31.62.50
       ansible_ssh_private_key_file: /home/ubuntu/.ssh/demo-keyp.pem
       ansible_user: ubuntu
