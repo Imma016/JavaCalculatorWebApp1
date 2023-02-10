@@ -34,7 +34,7 @@
       update_cache: yes
     when: ansible_distribution == "Ubuntu"
 
-    - name: Install JAVA in UBUNTU 
+  - name: Install JAVA in UBUNTU 
     apt:
       name: default-jdk
       state: present
