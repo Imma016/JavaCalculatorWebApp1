@@ -1,6 +1,11 @@
 ---
 #Make sure server is availabe and service is not running
 
+- name: test jobs
+  hosts: all
+  become: true
+
+  tasks:
   - name:  ping all servers
     ping:
 
