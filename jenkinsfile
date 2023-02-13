@@ -19,6 +19,8 @@ pipeline {
         }
         stage ('Execute ansible playbook'){
             steps {
+                sh 'ls /home/ubuntu/'
+                sh 'ls /home/ubuntu/.ssh'
                 ansiblePlaybook disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory.yml', playbook: 'Calc-playbook.yml'
             }
         }
